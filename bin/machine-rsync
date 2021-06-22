@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rsync -avz -e \
+	"ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
+	--progress $1 user@192.168.0.179:$2

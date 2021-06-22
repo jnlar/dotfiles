@@ -1,0 +1,3 @@
+#!/bin/bash
+
+journalctl -n 250 > $1/log-"$(date +'%x%R' | sed 's/\///g; s/://g')"

@@ -1,0 +1,7 @@
+#!/bin/bash
+#turn that page into a file!
+
+x="<html><head><meta http-equiv='refresh' content='0;URL=\"$1\"'/></head></html>"
+
+# you must append .html or .htm to the end of arg 2 filename
+echo $x > $2

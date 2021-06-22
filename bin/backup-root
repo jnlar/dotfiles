@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cd / 
+tar -cvpJf /home/user/01/backups/root-`echo $(date +'%x%R' | sed 's/\///g; s/://g')`.tar.xz \
+	--exclude=/proc \
+	--exclude=/tmp \
+	--exclude=/mnt \
+	--exclude=/dev \
+	--exclude=/sys \
+	--exclude=/run \
+	--exclude=/media \
+	--exclude=/var/log \
+	--exclude=/var/cache \
+	--exclude=/home /
