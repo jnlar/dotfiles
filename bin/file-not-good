@@ -1,7 +1,0 @@
-#!/bin/bash
-
-for FILE in "$(find . -type f -not -perm 0600)"; do
-	printf "\033[0;32mChanging file permissions of: \033[0m\n"
-	printf "%s\n" "$FILE"
-	chmod 0600 $FILE
-done

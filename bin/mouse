@@ -1,9 +1,0 @@
-#!/bin/bash
-
-# Solution to mouse freeze after suspend
-if [ $UID -eq 0 ]; then
-	[[ -d /sys/bus/serio/drivers/psmouse ]] && \
-		modprobe -r psmouse && modprobe psmouse 
-else
-	echo "Run as root: Exit $?"
-fi

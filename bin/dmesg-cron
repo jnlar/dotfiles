@@ -1,4 +1,0 @@
-#!/bin/bash
-
-dmesg -THk > $1/dmesg-log- \
-	"$(date +'%x%R' | sed 's/\///g; s/://g')"
