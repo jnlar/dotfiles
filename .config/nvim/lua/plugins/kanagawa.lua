@@ -1,4 +1,4 @@
--- theme configuration
+-- kanagawa configuration
 return { 
 	"rebelot/kanagawa.nvim",
 }
