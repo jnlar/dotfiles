@@ -1,8 +1,10 @@
 [init]
-	defaultBranch = main
+	defaultBranch = master
 [alias]
 	pushf = push --force-with-lease
 [column]
 	ui = auto
 [branch]
 	sort = -committerdate
+[rerere]
+	enabled = true
