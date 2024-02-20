@@ -1,0 +1,8 @@
+[init]
+	defaultBranch = main
+[alias]
+	pushf = push --force-with-lease
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
