@@ -46,7 +46,10 @@ vim.cmd("set nobackup")
 vim.cmd("set nowritebackup")
 
 -- stop newline continuation of comments
-vim.cmd("set formatoptions-=cro")
+--- vim.opt.formatoptions:remove({ 'c', 'r', 'o' })
+vim.cmd([[
+	autocmd FileType * set formatoptions-=cro
+]])
 
 -- faster completion
 vim.cmd("set updatetime=300")
