@@ -3,6 +3,7 @@ vim.cmd("set t_AB=^[[48;5;%dm")
 vim.cmd("set t_AF=^[[38;5;%dm")
 vim.cmd("set background=dark")
 vim.cmd("set termguicolors")
+vim.cmd("set noswapfile")
 
 -- relative numbers
 vim.cmd("set number")
