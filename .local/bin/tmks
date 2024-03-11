@@ -1,6 +1,7 @@
 #!/bin/bash
 
-tmux ls | grep -v attached | while read NOT_ATTACHED; do \
-	tmux kill-session -t ${NOT_ATTACHED:0:1};
+tmux ls | grep -v attached | while read LINE; do \
+	SESSION_NAME=$(echo $LINE | cut -d ":" -f1)
+	tmux kill-session -t "$SESSION_NAME";
 done
 
